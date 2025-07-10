@@ -12,42 +12,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// フォーム送信処理
-document.querySelector('.cta-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+// LINE申し込みボタンのクリック処理
+document.querySelector('.line-button').addEventListener('click', function(e) {
+    // Google Analytics などでイベント追跡したい場合はここに記述
+    console.log('LINE申し込みボタンがクリックされました');
     
-    const formData = new FormData(this);
-    const data = {};
-    
-    for (let [key, value] of formData.entries()) {
-        data[key] = value;
-    }
-    
-    // バリデーション
-    if (!data.name || !data.email || !data.phone || !data.time) {
-        alert('すべての項目を入力してください。');
-        return;
-    }
-    
-    // メールアドレスのバリデーション
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
-        alert('正しいメールアドレスを入力してください。');
-        return;
-    }
-    
-    // 電話番号のバリデーション
-    const phoneRegex = /^[0-9-]+$/;
-    if (!phoneRegex.test(data.phone)) {
-        alert('正しい電話番号を入力してください。');
-        return;
-    }
-    
-    // 送信処理（実際のAPIエンドポイントに置き換えてください）
-    alert('お申し込みありがとうございます！\n確認メールを送信いたします。');
-    
-    // フォームをリセット
-    this.reset();
+    // 実際のLINE公式アカウントURLに置き換えてください
+    // this.href = 'https://line.me/R/ti/p/@your-line-id';
 });
 
 // スクロール時のアニメーション
@@ -170,7 +141,7 @@ document.querySelectorAll('.product-item').forEach(item => {
 });
 
 // CTAボタンのクリック追跡
-document.querySelectorAll('.hero-cta, .cta-button-main').forEach(button => {
+document.querySelectorAll('.hero-cta, .line-button').forEach(button => {
     button.addEventListener('click', function(e) {
         // Google Analytics などでイベント追跡したい場合はここに記述
         console.log('CTA button clicked:', this.textContent);
@@ -187,12 +158,6 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // ページが読み込まれた時の処理
     console.log('ワークマン防災イベントLP loaded');
-    
-    // フォームの初期化
-    const form = document.querySelector('.cta-form');
-    if (form) {
-        form.reset();
-    }
 });
 
 // エラーハンドリング

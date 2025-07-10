@@ -17,7 +17,7 @@
             <nav class="nav">
                 <a href="#event">イベント詳細</a>
                 <a href="#products">防災グッズ</a>
-                <a href="#cta" class="cta-button">今すぐ申し込み</a>
+                <a href="#cta" class="cta-button">公式LINE申し込み</a>
             </nav>
         </div>
     </header>
@@ -26,10 +26,15 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="hero-subtitle">その時、あなたは</span>
-                    <span class="hero-main">家族を守れますか？</span>
-                </h1>
+                <div class="hero-title-container">
+                    <h1 class="hero-title">
+                        <span class="hero-subtitle">その時、あなたは</span>
+                        <span class="hero-main">家族を守れますか？</span>
+                    </h1>
+                    <div class="checklist-image">
+                        <img src="IMG_3271.JPG" alt="災害の備えチェックリスト">
+                    </div>
+                </div>
                 <p class="hero-description">
                     災害はいつ起きるかわからない。<br>
                     でも、<strong>備えは今できる。</strong>
@@ -44,7 +49,7 @@
                         <span class="stat-text">の家庭が防災グッズ不足</span>
                     </div>
                 </div>
-                <a href="#event" class="hero-cta">無料体験イベントに参加する</a>
+                <a href="#cta" class="hero-cta">公式LINEで申し込む</a>
             </div>
             <div class="hero-image">
                 <img src="https://via.placeholder.com/600x400/ff6b35/ffffff?text=防災イメージ" alt="災害時の備え">
@@ -289,38 +294,23 @@
     <section id="cta" class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">今すぐ無料体験イベントに申し込む</h2>
+                <h2 class="cta-title">公式LINEで無料体験イベントに申し込む</h2>
                 <p class="cta-subtitle">
                     定員20名限定！<br>
                     お申し込みはお早めに
                 </p>
-                <form class="cta-form">
-                    <div class="form-group">
-                        <label for="name">お名前</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">電話番号</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">希望時間</label>
-                        <select id="time" name="time" required>
-                            <option value="">選択してください</option>
-                            <option value="10:00">10:00-11:00</option>
-                            <option value="11:00">11:00-12:00</option>
-                            <option value="13:00">13:00-14:00</option>
-                            <option value="14:00">14:00-15:00</option>
-                            <option value="15:00">15:00-16:00</option>
-                            <option value="16:00">16:00-17:00</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="cta-button-main">今すぐ申し込む（無料）</button>
-                </form>
+                <div class="line-cta">
+                    <a href="https://line.me/R/ti/p/" class="line-button" target="_blank">
+                        <div class="line-icon">
+                            <img src="https://via.placeholder.com/40x40/00B900/ffffff?text=LINE" alt="LINE">
+                        </div>
+                        <span>公式LINEで申し込む（無料）</span>
+                    </a>
+                    <p class="line-description">
+                        LINEで友だち追加後、以下の情報をお送りください：<br>
+                        ①お名前 ②希望時間 ③電話番号
+                    </p>
+                </div>
                 <div class="cta-benefits">
                     <div class="benefit-item">
                         <span class="benefit-icon">✓</span>
