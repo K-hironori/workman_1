@@ -34,8 +34,11 @@ body {
     padding: 15px 20px;
 }
 
-.logo img {
-    height: 40px;
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
 }
 
 .nav {
@@ -79,12 +82,10 @@ body {
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    gap: 60px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 .hero-text {
@@ -158,16 +159,6 @@ body {
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-.hero-image {
-    flex: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
 
 /* セクション共通 */
 .section-title {
@@ -236,9 +227,7 @@ body {
 }
 
 .solution-content {
-    display: flex;
-    align-items: center;
-    gap: 60px;
+    text-align: center;
 }
 
 .solution-text {
@@ -268,16 +257,6 @@ body {
     color: #333;
 }
 
-.solution-image {
-    flex: 1;
-}
-
-.solution-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
 
 /* イベントセクション */
 .event {
@@ -396,16 +375,6 @@ body {
     transform: translateY(-5px);
 }
 
-.product-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .product-content {
     padding: 30px;
@@ -579,9 +548,10 @@ body {
     border-radius: 50%;
 }
 
-.line-icon img {
-    width: 25px;
-    height: 25px;
+.line-icon span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #00B900;
 }
 
 .line-description {
@@ -635,8 +605,11 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-logo img {
-    height: 40px;
+.footer-logo h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
 }
 
 .footer-info {
@@ -678,10 +651,6 @@ body {
         gap: 20px;
     }
     
-    .solution-content {
-        flex-direction: column;
-        gap: 40px;
-    }
     
     .event-content {
         grid-template-columns: 1fr;
